@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- heading build -->
+        <div class="head">
+            <h1>DojoWeather</h1>
+            <ul class="list" onclick="weatherplace()">
+                <li>Burbank</li>
+                <li>Chicago</li>
+                <li>Dallas</li>
+            </ul>
+        </div>
+
+        <!-- main content build -->
+        <div class="title">
+            <h2>San Jose</h2>
+            <p>Show temperature in :
+                <select class="switchtemp">
+                    <option>&#8451</option>
+                    <option onchange="fToC(this)">18&#8451</option>
+                    <option>22&#8451</option>
+                </select>
+            </p>
+        </div>
+        <hr>
+        <div class="block-days">
+
+            <div class="days">
+                <h4>Today</h4>
+                <img src="./assets/some_rain.png" alt="rain">
+                <p>Some rain</p>
+                <div class="nums">
+                    <span>24&#176</span>
+                    <span>36&#176</span>
+                </div>
+            </div>
+
+            <div class="days">
+                <h4>Tomorrow</h4>
+                <img src="./assets/some_sun.png" alt="sun">
+                <p>Some rain</p>
+                <div class="nums">
+                    <span>24&#176</span>
+                    <span>36&#176</span>
+                </div>
+            </div>
+
+            <div class="days">
+                <h4>Friday</h4>
+                <img src="./assets/some_clouds.png" alt="clouds">
+                <p>Some rain</p>
+                <div class="nums">
+                    <span>24&#176</span>
+                    <span>36&#176</span>
+                </div>
+            </div>
+
+            <div class="days">
+                <h4>Saturday</h4>
+                <img src="./assets/some_sun.png" alt="sun">
+                <p>Some rain</p>
+                <div class="nums">
+                    <span>24&#176</span>
+                    <span>36&#176</span>
+                </div>
+            </div>
+
+            <div class="cookie">
+                <img src="./assets/cookie.png" alt="cookie">
+                <div>
+                    <h2>Stop! Cookie time</h2>
+                    <p>We use cookie (sadly not the edible ones) to personalize content and ads, to procide social
+                        media
+                        features and to analyse our traffic.<a href="#">Read more</a>
+                    </p>
+                </div>
+                <button class="btn" onclick="cookiebutton()">I Accept</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
